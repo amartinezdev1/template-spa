@@ -8,92 +8,7 @@
     </main>
     <about />
     <schedule />
-
-    <section class="offers">
-        <v-col cols="12">
-            <p>Who we offer</p>
-            <p>Services</p>
-            <p>Quality Hair Treatments</p>
-        </v-col>
-        <v-col cols="12 d-flex">
-            <v-col cols="3">
-                <div>
-                    <div>
-                        <v-img
-                            max-width="300px"
-                            max-height="300px"
-                            src="https://images.unsplash.com/photo-1546877625-cb8c71916608?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            cover
-                        ></v-img>
-                    </div>
-                    <div>
-                        <p>Color</p>
-                    </div>
-                    <div>
-                        <p>Hair color</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, recusandae.</p>
-                    </div>
-                </div>
-            </v-col>
-            <v-col cols="3">
-                <div>
-                    <div>
-                        <v-img
-                            max-width="300px"
-                            max-height="300px"
-                            src="https://images.unsplash.com/photo-1546877625-cb8c71916608?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            cover
-                        ></v-img>
-                    </div>
-                    <div>
-                        <p>Color</p>
-                    </div>
-                    <div>
-                        <p>Hair color</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, recusandae.</p>
-                    </div>
-                </div>
-            </v-col>
-            <v-col cols="3">
-                <div>
-                    <div>
-                        <v-img
-                            max-width="300px"
-                            max-height="300px"
-                            src="https://images.unsplash.com/photo-1546877625-cb8c71916608?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            cover
-                        ></v-img>
-                    </div>
-                    <div>
-                        <p>Color</p>
-                    </div>
-                    <div>
-                        <p>Hair color</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, recusandae.</p>
-                    </div>
-                </div>
-            </v-col>
-            <v-col cols="3">
-                <div>
-                    <div>
-                        <v-img
-                            max-width="300px"
-                            max-height="300px"
-                            src="https://images.unsplash.com/photo-1546877625-cb8c71916608?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            cover
-                        ></v-img>
-                    </div>
-                    <div>
-                        <p>Color</p>
-                    </div>
-                    <div>
-                        <p>Hair color</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, recusandae.</p>
-                    </div>
-                </div>
-            </v-col>
-        </v-col>
-    </section>
+    <services />
 
     <section class="services">
         <div class="d-flex">
@@ -298,10 +213,10 @@
                 <v-card-actions>
                     <v-btn color="orange-lighten-2" text="Explore"></v-btn>
                     <v-spacer></v-spacer>
-                    <v-btn
+                    <!-- <v-btn
                         :icon="show ? 'mdi-chevron-up' : 'mdi-chevron-down'"
                         @click="show = !show"
-                    ></v-btn>
+                    ></v-btn> -->
                 </v-card-actions>
             </v-card>
             <v-card class="mx-auto" max-width="344">
@@ -317,10 +232,10 @@
                 <v-card-actions>
                     <v-btn color="orange-lighten-2" text="Explore"></v-btn>
                     <v-spacer></v-spacer>
-                    <v-btn
+                    <!-- <v-btn
                         :icon="show ? 'mdi-chevron-up' : 'mdi-chevron-down'"
                         @click="show = !show"
-                    ></v-btn>
+                    ></v-btn> -->
                 </v-card-actions>
             </v-card>
             <v-card class="mx-auto" max-width="344">
@@ -336,10 +251,10 @@
                 <v-card-actions>
                     <v-btn color="orange-lighten-2" text="Explore"></v-btn>
                     <v-spacer></v-spacer>
-                    <v-btn
+                    <!-- <v-btn
                         :icon="show ? 'mdi-chevron-up' : 'mdi-chevron-down'"
                         @click="show = !show"
-                    ></v-btn>
+                    ></v-btn> -->
                 </v-card-actions>
             </v-card>
         </v-col>
@@ -363,7 +278,7 @@ main {
     position: relative;
     z-index: 1;
 
-    .services, .offers, .gallery, .contact, .products, .blog {
+    .offers, .gallery, .contact, .products, .blog {
         max-width: 1400px;
         padding: 80px 16px 0 16px;
         margin: 0 auto;

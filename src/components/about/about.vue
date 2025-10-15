@@ -20,10 +20,10 @@ import aboutCard from './aboutCard.vue';
 
 const display = useDisplay();
 const classText = computed(() => {
-    const w = display.width.value
-    if (w <= 375) return 'bg-text-mobile'
-    if (w <= 768) return 'bg-text-tablet'
-    if (w <= 1024) return 'bg-text-laptop'
+    const width = display.width.value
+    if (width <= 375) return 'bg-text-mobile'
+    if (width <= 1024) return 'bg-text-tablet'
+    if (width <= 1440) return 'bg-text-laptop'
     return 'bg-text-desktop'
 })
 </script>
