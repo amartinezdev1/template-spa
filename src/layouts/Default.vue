@@ -1,6 +1,6 @@
 <template>
     <v-app>
-        <HeaderLayout />
+        <Header />
         <v-main>
             <slot></slot>
         </v-main>
@@ -8,5 +8,5 @@
 </template>
 
 <script setup>
-import HeaderLayout from './HeaderLayout.vue';
+import Header from './Header.vue'
 </script>

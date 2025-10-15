@@ -6,74 +6,8 @@
             cover
         ></v-img>
     </main>
-    <section class="about d-flex flex-wrap">
-        <v-col class="about-text" cols="12" md="6">
-            <p>Who we are</p>
-            <p>about</p>
-            <p>We’re Best Quality Hair Treatment Center</p>
-        </v-col>
-        <v-col class="about-text" cols="12" md="6">
-            <p>Sed ut perspiciatis unde omnis iste natus err voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis</p>
-            <v-btn append-icon="$vuetify" variant="text">Button</v-btn>
-        </v-col>
-    </section>
-
-    <section class="services d-flex">
-        <v-col cols="4">
-            <v-img
-                src="https://images.unsplash.com/photo-1546877625-cb8c71916608?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                class="align-end"
-                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                height="200px"
-                cover
-            >
-                <v-card-title class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nam!</v-card-title>
-            </v-img>
-        </v-col>
-        <v-col cols="4">
-            <v-img
-                src="https://images.unsplash.com/photo-1546877625-cb8c71916608?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                class="align-end"
-                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                height="200px"
-                cover
-            >
-                <v-card-title class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nam!</v-card-title>
-            </v-img>
-        </v-col>
-        <v-col cols="4">
-            <v-img
-                src="https://images.unsplash.com/photo-1546877625-cb8c71916608?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                class="align-end"
-                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                height="200px"
-                cover
-            >
-                <v-card-title class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nam!</v-card-title>
-            </v-img>
-        </v-col>
-    </section>
-
-    <section class="schedule d-flex">
-        <v-col cols="6">
-            <v-img
-                max-height="500"
-                src="https://images.unsplash.com/photo-1546877625-cb8c71916608?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                cover
-            ></v-img>
-        </v-col>
-        <v-col cols="6">
-            <p>Hair Salon</p>
-            <p>Working Hours</p>
-            <p>Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium totam aperiame eaque quae abillo inventore veritatis</p>
-            <div class="d-flex justify-space-between">
-                <p>Monday to Friday</p>
-                <p>:</p>
-                <p>7:30 am - 1:00 am</p>
-            </div>
-            <v-btn append-icon="$vuetify" variant="text">Button</v-btn>
-        </v-col>
-    </section>
+    <about />
+    <schedule />
 
     <section class="offers">
         <v-col cols="12">
@@ -206,9 +140,222 @@
             />
         </v-col>
     </section>
+
+    <section class="contact d-flex">
+        <v-col cols="6">
+            <p>Make appointment</p>
+            <p>Get hair Treatment booking seat</p>
+            <p>Book</p>
+            <v-btn append-icon="$vuetify" variant="text">Button</v-btn>
+        </v-col>
+        <v-col cols="6">
+            <div class="d-flex">
+                <v-col cols="6">
+                    <v-text-field clearable label="Label" variant="outlined"></v-text-field>
+                </v-col>
+                <v-col cols="6">
+                    <v-text-field clearable label="Label" variant="outlined"></v-text-field>
+                </v-col>
+            </div>
+
+
+            <div class="d-flex">
+                <v-col cols="6">
+                    <v-text-field clearable label="Label" variant="outlined"></v-text-field>
+                </v-col>
+                <v-col cols="6">
+                    <v-select
+                        label="Select"
+                        :items="['California', 'Colorado', 'Florida', 'Georgia', 'Texas', 'Wyoming']"
+                        multiple
+                        variant="outlined"
+                    ></v-select>
+                </v-col>
+            </div>
+            <v-btn append-icon="$vuetify" variant="text">Make appointment</v-btn>
+        </v-col>
+    </section>
+
+    <section class="products">
+        <v-col cols="12">
+            <p>Popular product</p>
+            <p>Visit Our Shop to collect beauty products</p>
+            <p>Products</p>
+        </v-col>
+        <v-col cols="12 d-flex">
+            <v-col cols="3">
+                <div>
+                    <div>
+                        <v-img
+                            max-width="300px"
+                            max-height="300px"
+                            src="https://images.unsplash.com/photo-1546877625-cb8c71916608?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            cover
+                        ></v-img>
+                    </div>
+                    <div>
+                        <p>Color</p>
+                    </div>
+                    <div>
+                        <p>Hair color</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, recusandae.</p>
+                    </div>
+                </div>
+            </v-col>
+            <v-col cols="3">
+                <div>
+                    <div>
+                        <v-img
+                            max-width="300px"
+                            max-height="300px"
+                            src="https://images.unsplash.com/photo-1546877625-cb8c71916608?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            cover
+                        ></v-img>
+                    </div>
+                    <div>
+                        <p>Color</p>
+                    </div>
+                    <div>
+                        <p>Hair color</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, recusandae.</p>
+                    </div>
+                </div>
+            </v-col>
+            <v-col cols="3">
+                <div>
+                    <div>
+                        <v-img
+                            max-width="300px"
+                            max-height="300px"
+                            src="https://images.unsplash.com/photo-1546877625-cb8c71916608?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            cover
+                        ></v-img>
+                    </div>
+                    <div>
+                        <p>Color</p>
+                    </div>
+                    <div>
+                        <p>Hair color</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, recusandae.</p>
+                    </div>
+                </div>
+            </v-col>
+            <v-col cols="3">
+                <div>
+                    <div>
+                        <v-img
+                            max-width="300px"
+                            max-height="300px"
+                            src="https://images.unsplash.com/photo-1546877625-cb8c71916608?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            cover
+                        ></v-img>
+                    </div>
+                    <div>
+                        <p>Color</p>
+                    </div>
+                    <div>
+                        <p>Hair color</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, recusandae.</p>
+                    </div>
+                </div>
+            </v-col>
+        </v-col>
+    </section>
+
+    <section class="testimonials d-flex">
+        <v-col cols="6">
+            <v-img
+                src="https://images.unsplash.com/photo-1546877625-cb8c71916608?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                cover
+            ></v-img>
+        </v-col>
+        <v-col cols="6">
+            <v-container>
+                <v-carousel :transition-duration="700" crossfade>
+                    <v-carousel-item v-for="(src, i) in items" :key="i" :src="src" cover></v-carousel-item>
+                </v-carousel>
+            </v-container>
+        </v-col>
+    </section>
+
+    <section class="blog">
+        <v-col cols="12">
+            <p>News & Blog</p>
+            <p>Latest News $ Blog</p>
+            <p>Blog</p>
+        </v-col>
+        <v-col cols="12" class="d-flex" >
+            <v-card class="mx-auto" max-width="344">
+                <v-img
+                    height="200px"
+                    src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+                    cover
+                ></v-img>
+
+                <v-card-title>Top western road trips</v-card-title>
+                <v-card-subtitle>1,000 miles of wonder</v-card-subtitle>
+
+                <v-card-actions>
+                    <v-btn color="orange-lighten-2" text="Explore"></v-btn>
+                    <v-spacer></v-spacer>
+                    <v-btn
+                        :icon="show ? 'mdi-chevron-up' : 'mdi-chevron-down'"
+                        @click="show = !show"
+                    ></v-btn>
+                </v-card-actions>
+            </v-card>
+            <v-card class="mx-auto" max-width="344">
+                <v-img
+                    height="200px"
+                    src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+                    cover
+                ></v-img>
+
+                <v-card-title>Top western road trips</v-card-title>
+                <v-card-subtitle>1,000 miles of wonder</v-card-subtitle>
+
+                <v-card-actions>
+                    <v-btn color="orange-lighten-2" text="Explore"></v-btn>
+                    <v-spacer></v-spacer>
+                    <v-btn
+                        :icon="show ? 'mdi-chevron-up' : 'mdi-chevron-down'"
+                        @click="show = !show"
+                    ></v-btn>
+                </v-card-actions>
+            </v-card>
+            <v-card class="mx-auto" max-width="344">
+                <v-img
+                    height="200px"
+                    src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+                    cover
+                ></v-img>
+
+                <v-card-title>Top western road trips</v-card-title>
+                <v-card-subtitle>1,000 miles of wonder</v-card-subtitle>
+
+                <v-card-actions>
+                    <v-btn color="orange-lighten-2" text="Explore"></v-btn>
+                    <v-spacer></v-spacer>
+                    <v-btn
+                        :icon="show ? 'mdi-chevron-up' : 'mdi-chevron-down'"
+                        @click="show = !show"
+                    ></v-btn>
+                </v-card-actions>
+            </v-card>
+        </v-col>
+    </section>
 </template>
 
 <script setup>
+import about from '@/components/about/about.vue';
+import schedule from '@/components/schedule/schedule.vue';
+
+const items = [
+    'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+    'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+    'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+    'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+]
 </script>
 
 <style lang="scss" scoped>
@@ -216,7 +363,7 @@ main {
     position: relative;
     z-index: 1;
 
-    .about, .services, .schedule, .offers, .gallery {
+    .services, .offers, .gallery, .contact, .products, .blog {
         max-width: 1400px;
         padding: 80px 16px 0 16px;
         margin: 0 auto;

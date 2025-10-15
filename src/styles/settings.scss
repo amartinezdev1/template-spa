@@ -8,3 +8,45 @@
 // @use 'vuetify/settings' with (
 //   $color-pack: false
 // );
+
+.bg-text-center {
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.bg-text-left {
+	left: 0;
+	transform: translate(0%, -50%);
+	text-align: left;
+}
+
+.bg-text {
+	position: absolute;
+	top: 0%;
+	color: rgba(0, 0, 0, 0.05);
+	pointer-events: none;
+	user-select: none;
+	font-weight: bold;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.bg-text-white {
+	position: absolute;
+	top: 0%;
+	color: rgba(255, 255, 255, 0.05);
+	pointer-events: none;
+	user-select: none;
+	font-weight: bold;
+	z-index: 1;
+	overflow: hidden;
+}
+
+$font-main: "Open Sans", sans-serif;
+$font-title: "Dancing Script", cursive;
+
+.bg-text-mobile { font: 75px $font-title; }
+.bg-text-tablet { font: 100px $font-title; }
+.bg-text-laptop { font: 150px $font-title; }
+.bg-text-desktop { font: 180px $font-title; }
