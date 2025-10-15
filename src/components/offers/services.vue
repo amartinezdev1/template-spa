@@ -5,23 +5,84 @@
             <span class="bg-text bg-text-center" :class="classText">Services</span>
             <p class="text-h3 font-weight-medium">Quality Hair Treatments</p>
         </v-col>
-        <v-col cols="12 d-flex">
-            <v-col cols="3">
-                <div>
+        <v-col class="mt-2" cols="12 d-flex flex-wrap">
+            <v-col cols="12" md="3" sm="6">
+                <div class="border px-8 py-10 d-flex flex-column align-center ga-6">
                     <div>
                         <v-img
-                            max-width="300px"
-                            max-height="300px"
+                            width="125px"
+                            height="125px"
+                            rounded="circle"
                             src="https://images.unsplash.com/photo-1546877625-cb8c71916608?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             cover
                         ></v-img>
                     </div>
-                    <div>
-                        <p>Color</p>
+                    <div class="position-relative">
+                        <span class="bg-text bg-text-center bg-text-tablet">Color</span>
                     </div>
+                    <div class="text-center">
+                        <p class="text-h5 font-weight-bold">Hair Colors</p>
+                        <p class="font-main">Quis autem vel eum sure repreh enderit wun</p>
+                    </div>
+                </div>
+            </v-col>
+            <v-col cols="12" md="3" sm="6">
+                <div class="border px-8 py-10 d-flex flex-column align-center ga-6">
                     <div>
-                        <p>Hair color</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, recusandae.</p>
+                        <v-img
+                            width="125px"
+                            height="125px"
+                            rounded="circle"
+                            src="https://images.unsplash.com/photo-1546877625-cb8c71916608?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            cover
+                        ></v-img>
+                    </div>
+                    <div class="position-relative">
+                        <span class="bg-text bg-text-center bg-text-tablet">Wash</span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-h5 font-weight-bold">Hair Washing</p>
+                        <p class="font-main">Quis autem vel eum sure repreh enderit wun</p>
+                    </div>
+                </div>
+            </v-col>
+            <v-col cols="12" md="3" sm="6">
+                <div class="border px-8 py-10 d-flex flex-column align-center ga-6">
+                    <div>
+                        <v-img
+                            width="125px"
+                            height="125px"
+                            rounded="circle"
+                            src="https://images.unsplash.com/photo-1546877625-cb8c71916608?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            cover
+                        ></v-img>
+                    </div>
+                    <div class="position-relative">
+                        <span class="bg-text bg-text-center bg-text-tablet">Cut</span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-h5 font-weight-bold">Hair Cutting</p>
+                        <p class="font-main">Quis autem vel eum sure repreh enderit wun</p>
+                    </div>
+                </div>
+            </v-col>
+            <v-col cols="12" md="3" sm="6">
+                <div class="border px-8 py-10 d-flex flex-column align-center ga-6">
+                    <div>
+                        <v-img
+                            width="125px"
+                            height="125px"
+                            rounded="circle"
+                            src="https://images.unsplash.com/photo-1546877625-cb8c71916608?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            cover
+                        ></v-img>
+                    </div>
+                    <div class="position-relative">
+                        <span class="bg-text bg-text-center bg-text-tablet">Style</span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-h5 font-weight-bold">Hair Message</p>
+                        <p class="font-main">Quis autem vel eum sure repreh enderit wun</p>
                     </div>
                 </div>
             </v-col>
@@ -47,10 +108,16 @@ const classText = computed(() => {
 .services{
     max-width: 1400px;
     margin: 0 auto;
-    padding: 120px 16px 0 16px;
+    padding: 120px 16px 100px 16px;
 
     p {
         font-family: "Montserrat", sans-serif;
+    }
+
+    .font-main {
+        font-family: "Open Sans", sans-serif;
+        font-size: 18px;
+        line-height: 2rem;
     }
 }
 </style>
