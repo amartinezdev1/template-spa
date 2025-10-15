@@ -9,11 +9,11 @@
                 ></v-img>
             </div>
             <ul class="d-flex ga-10">
-                <li><a href="">Home</a></li>
-                <li><a href="">Pages</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Service</a></li>
-                <li><a href="">Blog</a></li>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/home">Pages</a></li>
+                <li><a href="/home">Portfolio</a></li>
+                <li><a href="/home">Service</a></li>
+                <li><a href="/home">Blog</a></li>
             </ul>
             <div class="d-flex ga-6">
                 <v-icon icon="$vuetify" size="large"></v-icon>
