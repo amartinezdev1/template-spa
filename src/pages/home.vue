@@ -10,41 +10,7 @@
     <schedule />
     <services />
     <treatments />
-
-    <section class="contact d-flex">
-        <v-col cols="6">
-            <p>Make appointment</p>
-            <p>Get hair Treatment booking seat</p>
-            <p>Book</p>
-            <v-btn append-icon="$vuetify" variant="text">Button</v-btn>
-        </v-col>
-        <v-col cols="6">
-            <div class="d-flex">
-                <v-col cols="6">
-                    <v-text-field clearable label="Label" variant="outlined"></v-text-field>
-                </v-col>
-                <v-col cols="6">
-                    <v-text-field clearable label="Label" variant="outlined"></v-text-field>
-                </v-col>
-            </div>
-
-
-            <div class="d-flex">
-                <v-col cols="6">
-                    <v-text-field clearable label="Label" variant="outlined"></v-text-field>
-                </v-col>
-                <v-col cols="6">
-                    <v-select
-                        label="Select"
-                        :items="['California', 'Colorado', 'Florida', 'Georgia', 'Texas', 'Wyoming']"
-                        multiple
-                        variant="outlined"
-                    ></v-select>
-                </v-col>
-            </div>
-            <v-btn append-icon="$vuetify" variant="text">Make appointment</v-btn>
-        </v-col>
-    </section>
+    <contact />
 
     <section class="products">
         <v-col cols="12">
@@ -221,6 +187,7 @@ import about from '@/components/about/about.vue';
 import schedule from '@/components/schedule/schedule.vue';
 import services from '@/components/offers/services.vue';
 import treatments from '@/components/treatments/treatments.vue';
+import contact from '@/components/contact/contact.vue';
 
 const items = [
     'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
@@ -235,7 +202,7 @@ main {
     position: relative;
     z-index: 1;
 
-    .offers, .gallery, .contact, .products, .blog {
+    .gallery, .products, .blog {
         max-width: 1400px;
         padding: 80px 16px 0 16px;
         margin: 0 auto;

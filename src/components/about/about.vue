@@ -1,11 +1,11 @@
 <template>
     <section class="about d-flex flex-wrap align-center">
-        <v-col class="about-text px-4 position-relative" cols="12" md="6">
+        <v-col class="px-4 position-relative" cols="12" md="6">
             <p class="text-h5 font-weight-medium">Who we are</p>
             <span class="bg-text bg-text-left" :class="classText">About</span>
             <p class="text-h3 font-weight-medium">We’re Best Quality Hair Treatment Center</p>
         </v-col>
-        <v-col class="about-text px-4" cols="12" md="6">
+        <v-col class="px-4" cols="12" md="6">
             <p class="font-main mb-4">Sed ut perspiciatis unde omnis iste natus err voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis</p>
             <button class="about-btn">READ MORE</button>
         </v-col>
