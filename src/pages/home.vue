@@ -9,52 +9,7 @@
     <about />
     <schedule />
     <services />
-
-    <section class="services">
-        <div class="d-flex">
-            <v-col cols="4">
-                <v-img
-                    src="https://images.unsplash.com/photo-1546877625-cb8c71916608?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    class="align-end"
-                    gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                    height="200px"
-                    cover
-                >
-                    <v-card-title class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nam!</v-card-title>
-                </v-img>
-            </v-col>
-            <v-col cols="4">
-                <v-img
-                    src="https://images.unsplash.com/photo-1546877625-cb8c71916608?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    class="align-end"
-                    gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                    height="200px"
-                    cover
-                >
-                    <v-card-title class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nam!</v-card-title>
-                </v-img>
-            </v-col>
-            <v-col cols="4">
-                <v-img
-                    src="https://images.unsplash.com/photo-1546877625-cb8c71916608?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    class="align-end"
-                    gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                    height="200px"
-                    cover
-                >
-                    <v-card-title class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nam!</v-card-title>
-                </v-img>
-            </v-col>
-        </div>
-        <v-col cols="12">
-            <video
-                aspect-ratio="16/9"
-                width="100%"
-                image="https://cdn.jsek.work/cdn/vt-sunflowers.jpg"
-                src="https://cdn.jsek.work/cdn/vt-sunflowers.mp4"
-            />
-        </v-col>
-    </section>
+    <treatments />
 
     <section class="contact d-flex">
         <v-col cols="6">
@@ -264,6 +219,8 @@
 <script setup>
 import about from '@/components/about/about.vue';
 import schedule from '@/components/schedule/schedule.vue';
+import services from '@/components/offers/services.vue';
+import treatments from '@/components/treatments/treatments.vue';
 
 const items = [
     'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
