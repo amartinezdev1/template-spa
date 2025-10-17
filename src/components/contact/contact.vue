@@ -29,7 +29,7 @@
                         ></v-select>
                     </v-col>
                 </div>
-                <div class="px-3">
+                <div class="mt-2 px-3">
                     <v-btn class="btn-book" append-icon="mdi-arrow-right-thin" size="x-large">Booking now</v-btn>
                 </div>
             </v-col>

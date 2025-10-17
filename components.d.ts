@@ -13,6 +13,7 @@ declare module 'vue' {
     AppFooter: typeof import('./src/components/AppFooter.vue')['default']
     Contact: typeof import('./src/components/contact/contact.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    Products: typeof import('./src/components/products/products.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Schedule: typeof import('./src/components/schedule/schedule.vue')['default']

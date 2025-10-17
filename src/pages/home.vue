@@ -11,92 +11,7 @@
     <services />
     <treatments />
     <contact />
-
-    <section class="products">
-        <v-col cols="12">
-            <p>Popular product</p>
-            <p>Visit Our Shop to collect beauty products</p>
-            <p>Products</p>
-        </v-col>
-        <v-col cols="12 d-flex">
-            <v-col cols="3">
-                <div>
-                    <div>
-                        <v-img
-                            max-width="300px"
-                            max-height="300px"
-                            src="https://images.unsplash.com/photo-1546877625-cb8c71916608?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            cover
-                        ></v-img>
-                    </div>
-                    <div>
-                        <p>Color</p>
-                    </div>
-                    <div>
-                        <p>Hair color</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, recusandae.</p>
-                    </div>
-                </div>
-            </v-col>
-            <v-col cols="3">
-                <div>
-                    <div>
-                        <v-img
-                            max-width="300px"
-                            max-height="300px"
-                            src="https://images.unsplash.com/photo-1546877625-cb8c71916608?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            cover
-                        ></v-img>
-                    </div>
-                    <div>
-                        <p>Color</p>
-                    </div>
-                    <div>
-                        <p>Hair color</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, recusandae.</p>
-                    </div>
-                </div>
-            </v-col>
-            <v-col cols="3">
-                <div>
-                    <div>
-                        <v-img
-                            max-width="300px"
-                            max-height="300px"
-                            src="https://images.unsplash.com/photo-1546877625-cb8c71916608?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            cover
-                        ></v-img>
-                    </div>
-                    <div>
-                        <p>Color</p>
-                    </div>
-                    <div>
-                        <p>Hair color</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, recusandae.</p>
-                    </div>
-                </div>
-            </v-col>
-            <v-col cols="3">
-                <div>
-                    <div>
-                        <v-img
-                            max-width="300px"
-                            max-height="300px"
-                            src="https://images.unsplash.com/photo-1546877625-cb8c71916608?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            cover
-                        ></v-img>
-                    </div>
-                    <div>
-                        <p>Color</p>
-                    </div>
-                    <div>
-                        <p>Hair color</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, recusandae.</p>
-                    </div>
-                </div>
-            </v-col>
-        </v-col>
-    </section>
+    <products />
 
     <section class="testimonials d-flex">
         <v-col cols="6">
@@ -188,6 +103,7 @@ import schedule from '@/components/schedule/schedule.vue';
 import services from '@/components/offers/services.vue';
 import treatments from '@/components/treatments/treatments.vue';
 import contact from '@/components/contact/contact.vue';
+import products from '@/components/products/products.vue';
 
 const items = [
     'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
@@ -202,7 +118,7 @@ main {
     position: relative;
     z-index: 1;
 
-    .gallery, .products, .blog {
+    .gallery, .blog {
         max-width: 1400px;
         padding: 80px 16px 0 16px;
         margin: 0 auto;
