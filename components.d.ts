@@ -11,6 +11,7 @@ declare module 'vue' {
     About: typeof import('./src/components/about/about.vue')['default']
     AboutCard: typeof import('./src/components/about/aboutCard.vue')['default']
     AppFooter: typeof import('./src/components/AppFooter.vue')['default']
+    Blog: typeof import('./src/components/blog/blog.vue')['default']
     Contact: typeof import('./src/components/contact/contact.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     Products: typeof import('./src/components/products/products.vue')['default']
