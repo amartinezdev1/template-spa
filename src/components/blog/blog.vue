@@ -6,7 +6,7 @@
             <p class="text-h3 font-weight-medium">Latest news & blog</p>
         </v-col>
         <v-col class="mt-2" cols="12 d-flex flex-wrap">
-            <v-col class="px-8" cols="12" md="4" sm="6" v-for="card in cardService" :key="card.id">
+            <v-col cols="12" md="4" sm="6" v-for="card in cardService" :key="card.id">
                 <div class="pa-8 border d-flex flex-column align-center ga-6">
                     <div>
                         <p class="text-h5 font-weight-bold">{{ card.title }}</p>
