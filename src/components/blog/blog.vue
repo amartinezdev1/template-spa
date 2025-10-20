@@ -14,7 +14,7 @@
                     <div>
                         <v-img
                             class="rounded-lg"
-                            width="300px"
+                            width="275px"
                             height="205px"
                             :src="card.img"
                             cover
