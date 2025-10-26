@@ -48,7 +48,7 @@ const classText = computed(() => {
 .services{
     max-width: 1400px;
     margin: 0 auto;
-    padding: 120px 16px 100px 16px;
+    padding: 120px 16px 0 16px;
 
     p {
         font-family: "Montserrat", sans-serif;
