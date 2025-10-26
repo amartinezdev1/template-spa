@@ -5,10 +5,10 @@
             <span class="bg-text bg-text-center" :class="classText">Blog</span>
             <p class="text-h3 font-weight-medium">Latest news & blog</p>
         </v-col>
-        <v-col class="mt-2" cols="12 d-flex flex-wrap">
-            <v-col cols="12" md="4" sm="6" v-for="card in cardService" :key="card.id">
+        <v-col class="mt-2" cols="12 d-flex flex-wrap justify-space-between">
+            <v-col cols="12" md="3" sm="6" v-for="card in cardService" :key="card.id">
                 <v-card
-                    class="mx-auto border-0 elevation-2 pa-8 d-flex flex-column align-start ga-6"
+                    class="mx-auto border-0 elevation-1 pa-8 d-flex flex-column align-start ga-6"
                     max-width="370"
                 >
                     <p class="text-h6 font-weight-bold">{{ card.title }}</p>
@@ -62,6 +62,13 @@ const cardService = [
         title: 'Guide To Modern CSS Colors With RGB',
         description: 'Quis autem vel eurep ehenderit quin voluptate velit esse',
         img: 'https://images.unsplash.com/photo-1614838280822-4fdea45dc3c3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2370'
+    },
+    {
+        id: 4,
+        'bg-text': 'Cut',
+        title: 'Guide To Modern CSS Colors With RGB',
+        description: 'Quis autem vel eurep ehenderit quin voluptate velit esse',
+        img: 'https://images.unsplash.com/photo-1614838280822-4fdea45dc3c3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2370'
     }
 ]
 </script>
@@ -78,7 +85,7 @@ const cardService = [
 
     .text-description {
         font-family: "Open Sans", sans-serif;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 2rem;
         color: #6b6b6b;
     }
