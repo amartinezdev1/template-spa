@@ -7,23 +7,22 @@
         </v-col>
         <v-col class="mt-2" cols="12 d-flex flex-wrap">
             <v-col cols="12" md="4" sm="6" v-for="card in cardService" :key="card.id">
-                <div class="pa-8 border d-flex flex-column align-center ga-6">
-                    <div>
-                        <p class="text-h5 font-weight-bold">{{ card.title }}</p>
-                    </div>
-                    <div>
-                        <v-img
-                            class="rounded-lg"
-                            width="275px"
-                            height="205px"
-                            :src="card.img"
-                            cover
-                        ></v-img>
-                    </div>
-                    <div>
-                        <p class="">{{ card.description }}</p>
-                    </div>
-                </div>
+                <v-card
+                    class="mx-auto border-0 elevation-2 pa-8 d-flex flex-column align-start ga-6"
+                    max-width="370"
+                >
+                    <p class="text-h6 font-weight-bold">{{ card.title }}</p>
+                    <v-img
+                        class="mx-auto rounded-lg"
+                        width="100%"
+                        height="210px"
+                        :src="card.img"
+                        cover
+                    ></v-img>
+
+                    <p class="text-description">{{ card.description }}</p>
+                    <button class="btn-blog">LEARN MORE</button>
+                </v-card>
             </v-col>
         </v-col>
     </section>
@@ -46,7 +45,7 @@ const cardService = [
     {
         id: 1,
         'bg-text': 'Color',
-        title: 'Smase Podcast Episode Chris Ferdinande',
+        title: 'Smase Podcast Episode Ferdinande',
         description: 'Quis autem vel eurep ehenderit quin voluptate velit esse',
         img: 'https://images.unsplash.com/photo-1717160675332-1a8d1080ae3d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2370'
     },
@@ -73,8 +72,19 @@ const cardService = [
     padding: 120px 16px;
     margin: 0 auto;
 
-    p {
+    p{
         font-family: "Montserrat", sans-serif;
+    }
+
+    .text-description {
+        font-family: "Open Sans", sans-serif;
+        font-size: 18px;
+        line-height: 2rem;
+        color: #6b6b6b;
+    }
+
+    .btn-blog {
+        text-decoration: underline;
     }
 }
 </style>

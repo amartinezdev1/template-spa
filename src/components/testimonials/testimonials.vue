@@ -15,7 +15,7 @@
                             style="max-width: 90%; margin: 0 auto;"
                         >
                             <span class="bg-text-relative bg-text-center" :class="classText">Feedback</span>
-                            <p class="font-main text-center" :class="display.width.value < 768 ? 'text-h6' : 'text-h4'">Aaperiam eaque ipsa quae abillo inventore veritatis et arcitect beatae vitae Sedut persiciatis unde omnis iste natus error sit voluptateme accusantium dolore laudantium totam rem</p>
+                            <p class="text-testimonials text-center" :class="display.width.value < 768 ? 'text-h6' : 'text-h4'">Aaperiam eaque ipsa quae abillo inventore veritatis et arcitect beatae vitae Sedut persiciatis unde omnis iste natus error sit voluptateme accusantium dolore laudantium totam rem</p>
                         </div>
                     </v-sheet>
                 </v-carousel-item>
@@ -55,5 +55,11 @@ const items = [
 <style lang="scss" scoped>
 .testimonials {
     padding: 0;
+
+    .text-testimonials {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        line-height: 2.5rem;
+    }
 }
 </style>
