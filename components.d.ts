@@ -14,6 +14,7 @@ declare module 'vue' {
     Blog: typeof import('./src/components/blog/blog.vue')['default']
     Contact: typeof import('./src/components/contact/contact.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    Hero: typeof import('./src/components/sections/hero.vue')['default']
     Products: typeof import('./src/components/products/products.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

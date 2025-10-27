@@ -6,22 +6,22 @@
                 class="logo"
                 :width="125"
                 cover
-                src="https://html.webtend.net/lezar/assets/images/logos/white-logo.png"
+                src="https://html.webtend.net/lezar/assets/images/logos/color-logo.png"
               ></v-img>
             </div>
 
             <ul class="d-flex ga-10" v-if="display.width.value >= 1024">
-              <li><a href="">Home</a></li>
+              <li><a href="/">Home</a></li>
               <li><a href="about">About</a></li>
               <li><a href="booking">Portfolio</a></li>
               <li><a href="services">Services</a></li>
-              <li><a href="">Blog</a></li>
+              <li><a href="#">Blog</a></li>
             </ul>
 
             <div class="d-flex ga-6" v-if="display.width.value > 768">
-              <v-icon class="icon-action" color="white" icon="mdi-translate" size="large"></v-icon>
-              <v-icon class="icon-action" color="white" icon="mdi-calendar-month-outline" size="large"></v-icon>
-              <v-icon class="icon-action" color="white" icon="mdi-magnify" size="large"></v-icon>
+              <v-icon class="icon-action" color="black" icon="mdi-translate" size="large"></v-icon>
+              <v-icon class="icon-action" color="black" icon="mdi-calendar-month-outline" size="large"></v-icon>
+              <v-icon class="icon-action" color="black" icon="mdi-magnify" size="large"></v-icon>
             </div>
 
             <div v-else>
@@ -48,12 +48,12 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
 
 <style lang="scss" scoped>
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
-    width: 100%;
     z-index: 100;
-    background-color: transparent;
+    width: 100%;
+    background-color: white;
     transition: background-color 0.3s ease;
 
     nav {
@@ -66,7 +66,7 @@ header {
             a{
                 text-decoration: none;
                 list-style: none;
-                color: #fff;
+                color: black;
                 font-size: 18px;
                 text-transform: uppercase;
                 font-family: "Montserrat", sans-serif;
@@ -81,7 +81,7 @@ header {
 }
 
 header.scrolled {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: white;
   backdrop-filter: blur(6px);
 }
 </style>
